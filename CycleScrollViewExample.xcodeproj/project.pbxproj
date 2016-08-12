@@ -14,6 +14,13 @@
 		E53745781D5974EE000116C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53745761D5974EE000116C5 /* LaunchScreen.storyboard */; };
 		E53745831D5974EE000116C5 /* CycleScrollViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53745821D5974EE000116C5 /* CycleScrollViewExampleTests.swift */; };
 		E537458E1D5974EE000116C5 /* CycleScrollViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E537458D1D5974EE000116C5 /* CycleScrollViewExampleUITests.swift */; };
+		E56F2BDB1D5DAE1600AE1B3A /* HXWebImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56F2BDA1D5DAE1600AE1B3A /* HXWebImageCache.swift */; };
+		E56F2BDD1D5DAE1D00AE1B3A /* HXWebImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56F2BDC1D5DAE1D00AE1B3A /* HXWebImageDownloader.swift */; };
+		E56F2BDF1D5DAE2200AE1B3A /* HXWebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56F2BDE1D5DAE2200AE1B3A /* HXWebImageManager.swift */; };
+		E56F2BE11D5DAE2D00AE1B3A /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56F2BE01D5DAE2D00AE1B3A /* String+MD5.swift */; };
+		E56F2BE31D5DAE3300AE1B3A /* UIImageView+WebCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56F2BE21D5DAE3300AE1B3A /* UIImageView+WebCache.swift */; };
+		E56F2BE51D5DAE3900AE1B3A /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56F2BE41D5DAE3900AE1B3A /* ThreadHelper.swift */; };
+		E5E102AC1D5C1AF300A8CB66 /* HXCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E102A91D5C1AF300A8CB66 /* HXCycleScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		E53745891D5974EE000116C5 /* CycleScrollViewExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleScrollViewExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E537458D1D5974EE000116C5 /* CycleScrollViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleScrollViewExampleUITests.swift; sourceTree = "<group>"; };
 		E537458F1D5974EE000116C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56F2BDA1D5DAE1600AE1B3A /* HXWebImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWebImageCache.swift; sourceTree = "<group>"; };
+		E56F2BDC1D5DAE1D00AE1B3A /* HXWebImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWebImageDownloader.swift; sourceTree = "<group>"; };
+		E56F2BDE1D5DAE2200AE1B3A /* HXWebImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXWebImageManager.swift; sourceTree = "<group>"; };
+		E56F2BE01D5DAE2D00AE1B3A /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		E56F2BE21D5DAE3300AE1B3A /* UIImageView+WebCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebCache.swift"; sourceTree = "<group>"; };
+		E56F2BE41D5DAE3900AE1B3A /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
+		E5E102A91D5C1AF300A8CB66 /* HXCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXCycleScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 		E53745611D5974ED000116C5 = {
 			isa = PBXGroup;
 			children = (
+				E5E102A81D5C1AF300A8CB66 /* HXCycleScrollViewKit */,
 				E537456C1D5974ED000116C5 /* CycleScrollViewExample */,
 				E53745811D5974EE000116C5 /* CycleScrollViewExampleTests */,
 				E537458C1D5974EE000116C5 /* CycleScrollViewExampleUITests */,
@@ -123,6 +138,20 @@
 				E537458F1D5974EE000116C5 /* Info.plist */,
 			);
 			path = CycleScrollViewExampleUITests;
+			sourceTree = "<group>";
+		};
+		E5E102A81D5C1AF300A8CB66 /* HXCycleScrollViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				E5E102A91D5C1AF300A8CB66 /* HXCycleScrollView.swift */,
+				E56F2BDA1D5DAE1600AE1B3A /* HXWebImageCache.swift */,
+				E56F2BDC1D5DAE1D00AE1B3A /* HXWebImageDownloader.swift */,
+				E56F2BDE1D5DAE2200AE1B3A /* HXWebImageManager.swift */,
+				E56F2BE21D5DAE3300AE1B3A /* UIImageView+WebCache.swift */,
+				E56F2BE01D5DAE2D00AE1B3A /* String+MD5.swift */,
+				E56F2BE41D5DAE3900AE1B3A /* ThreadHelper.swift */,
+			);
+			path = HXCycleScrollViewKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E102AC1D5C1AF300A8CB66 /* HXCycleScrollView.swift in Sources */,
+				E56F2BDD1D5DAE1D00AE1B3A /* HXWebImageDownloader.swift in Sources */,
+				E56F2BE51D5DAE3900AE1B3A /* ThreadHelper.swift in Sources */,
+				E56F2BE11D5DAE2D00AE1B3A /* String+MD5.swift in Sources */,
+				E56F2BDF1D5DAE2200AE1B3A /* HXWebImageManager.swift in Sources */,
+				E56F2BDB1D5DAE1600AE1B3A /* HXWebImageCache.swift in Sources */,
 				E53745701D5974EE000116C5 /* ViewController.swift in Sources */,
+				E56F2BE31D5DAE3300AE1B3A /* UIImageView+WebCache.swift in Sources */,
 				E537456E1D5974ED000116C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +437,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CycleScrollViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HX.CycleScrollViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +451,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CycleScrollViewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HX.CycleScrollViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -484,6 +525,7 @@
 				E53745941D5974EE000116C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E53745951D5974EE000116C5 /* Build configuration list for PBXNativeTarget "CycleScrollViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +534,7 @@
 				E53745971D5974EE000116C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E53745981D5974EE000116C5 /* Build configuration list for PBXNativeTarget "CycleScrollViewExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +543,7 @@
 				E537459A1D5974EE000116C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
